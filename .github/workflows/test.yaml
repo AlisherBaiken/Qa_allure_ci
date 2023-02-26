@@ -1,19 +1,22 @@
-name: test
+name: Test
 
-on: [push]
+on: workflow_dispatch
+
 jobs:
- test:
-   # gde zapusket
+  test:
+    # где заускаем
     runs-on: ubuntu-latest
-    # chto delaem
+    # что делаем
     steps:
-      # vykachivaem repository
+      # выкачиваем репозиторий
       - uses: actions/checkout@v3
-        # nastroika java
+      # настраиваем java
       - uses: actions/setup-java@v3
         with:
-          distribution: 'zulu' # See 'Supported distributions' for available options
+          distribution: 'zulu'
           java-version: '11'
       - uses: Xotabu4/selenoid-github-action@v2
-          #zapuskaet testy
+      # запускаем тесты
       - run: ./gradlew clean test -Dselenide.remote=http://localhost:4444/wd/hub
+      # скачиваем историю тестов
+      - uses: actions/checkout@v2
