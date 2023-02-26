@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="qa.guru.allure.LabelsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-26T10:03:33" hostname="DESKTOP-4BG25C6" time="0.092">
+  <properties/>
+  <testcase name="РЎРѕР·РґР°РЅРёРµ Issue РІ Р°РІС‚РѕСЂРёР·РѕРІРѕРЅРЅРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ" classname="qa.guru.allure.LabelsTest" time="0.092"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
